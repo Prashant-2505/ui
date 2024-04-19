@@ -1,9 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
     return (
-        <div className='  text-white h-[4rem] w-full flex justify-between items-center px-4'>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.2, delay: 0.3 }}
+            className='  text-white h-[4rem] w-full flex justify-between items-center px-4'>
             <div className="logo  ">
                 <p className=' font-semibold text-2xl'>
                     MicroLearning
@@ -20,7 +25,7 @@ const Navbar = () => {
                 </ul>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 
