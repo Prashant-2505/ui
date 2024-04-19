@@ -34,7 +34,7 @@ export default function Home() {
         transition={{ duration: 0.4, delay: 0.6 }}
 
 
-        className=" flex flex-col  items-center w-full h-[100vh] pt-[6rem]">
+        className=" flex flex-col  items-center w-full h-[80vh] pt-[6rem]">
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
