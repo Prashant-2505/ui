@@ -16,7 +16,6 @@ export default function Home() {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setLoggedIn(true);
-        router.push('/chatRoom')
       }
       else {
         setLoggedIn(false);
